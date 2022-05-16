@@ -1,0 +1,22 @@
+$ref-prefix: '';
+$ref-suffix: '';
+
+cite {
+  /* defaults */
+  font-style: italic;
+  /*overwrites*/
+  counter-increment: reference;
+  display: block;
+  font-style: normal;
+  margin-left: 2.5em;
+  position: relative;
+  text-align: left;
+
+  &::before {
+    content: $ref-prefix counter(reference) $ref-suffix;
+    display: inline-block;
+    margin-left: -2.5em;
+    position: absolute;
+  }
+
+}

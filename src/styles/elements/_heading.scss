@@ -1,0 +1,136 @@
+h1 {
+    /* defaults */
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67__qem;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+    /*overwrites*/
+
+  &:hover {
+    &::before {
+      color: rgba(grey, 1);
+    }
+  }
+
+  &::before {
+    counter-increment: h1; /* Increment the value of section counter by 1 */
+    content: "§" counter(h1) ". ";  /* Display counter value in default style (decimal) */
+    color: rgba(grey, 0.1)
+  }
+
+
+}
+h2 {
+    /* defaults */
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83__qem;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+    /*overwrites*/
+
+   &:hover {
+    &::before {
+      color: rgba(grey, 1);
+    }
+  }
+  &::before {
+    counter-increment: h2; /* Increment the value of section counter by 1 */
+    content: "§" counter(h1) ". " counter(h2);  /* Display counter value in default style (decimal) */
+    color: rgba(grey, 0.1)
+
+ }
+}
+h3 {
+    /* defaults */
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1__qem;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+    /*overwrites*/
+   &:hover {
+    &::before {
+      color: rgba(grey, 1);
+    }
+  }
+  &::before {
+    counter-increment: h3; /* Increment the value of section counter by 1 */
+    content: "§" counter(h1) "." counter(h2) "." counter(h3) ". ";  /* Display counter value in default style (decimal) */
+    color: rgba(grey, 0.1)
+
+ }
+}
+h4 {
+    /* defaults */
+    display: block;
+    -webkit-margin-before: 1.33__qem;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+    /*overwrites*/
+
+   &:hover {
+    &::before {
+      color: rgba(grey, 1);
+    }
+  }
+  &::before {
+    counter-increment: h4; /* Increment the value of section counter by 1 */
+    content: "§" counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". ";  /* Display counter value in default style (decimal) */
+    color: rgba(grey, 0.1)
+ }
+}
+h5 {
+    /* defaults */
+    display: block;
+    font-size: .83em;
+    -webkit-margin-before: 1.67__qem;
+    -webkit-margin-after: 1.67em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+    /*overwrites*/
+
+   &:hover {
+    &::before {
+      color: rgba(grey, 1);
+    }
+  }
+  &::before {
+    counter-increment: h5; /* Increment the value of section counter by 1 */
+    content: "§" counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h4) ". ";  /* Display counter value in default style (decimal) */
+    color: rgba(grey, 0.1)
+ }
+}
+h6 {
+    /* defaults */
+    display: block;
+    font-size: .67em;
+    -webkit-margin-before: 2.33__qem;
+    -webkit-margin-after: 2.33em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+  /*overwrites*/
+
+   &:hover {
+    &::before {
+      color: rgba(grey, 1);
+    }
+  }
+  &::before {
+    counter-increment: h6; /* Increment the value of section counter by 1 */
+    content: "§" counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h4) "." counter(h6) ". ";  /* Display counter value in default style (decimal) */
+    color: rgba(grey, 0.1)
+
+ }
+}

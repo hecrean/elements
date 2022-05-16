@@ -1,0 +1,26 @@
+a {
+  padding-bottom: .05rem;
+  text-decoration: none;
+  -webkit-tap-highlight-color:hsla(1, 76%, 51%, .4);
+
+
+  &[href^="#"] {
+    color: inherit;
+    // content: target-counter(attr(href, url), reference);
+    text-decoration: none;
+
+    &::before {
+      // content: $cite-prefix;
+    }
+
+    &::after {
+      // content: $cite-suffix;
+    }
+
+  }
+
+
+
+}
+
+

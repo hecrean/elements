@@ -1,0 +1,22 @@
+/*Data Attribute*/
+[hidden] {
+  display: none
+}
+
+[data-hstack] {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+[data-vstack] {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+[data-spacer] {
+  flex-grow: 1000;
+  height: 100%;
+  width: 100%;
+  }

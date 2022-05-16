@@ -1,0 +1,45 @@
+$figure-prefix: 'Fig ';
+$figure-suffix: ': ';
+
+
+figcaption {
+  /* defaults */
+  display: block;
+
+  /*overwrites*/
+  &::before {
+    font-size: small;
+    font-style: oblique;
+    content: $figure-prefix counter(figure) $figure-suffix;
+    line-height: 0;
+
+  }
+  &:hover {
+    &::before {
+      color: rgba(grey, 1);
+    }
+  }
+}
+
+
+
+
+figure {
+  /* defaults */
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 40px;
+  -webkit-margin-end: 40px;
+
+  /*overwrites*/
+  counter-increment: figure;
+
+  @supports (figure:has(figcaption)) {
+    figure:has(figcaption) img {
+
+    }
+  }
+}
+
+

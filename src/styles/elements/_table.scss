@@ -1,0 +1,89 @@
+/* tables */
+
+table {
+  /* defaults */
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray;
+/*overwrites*/
+  margin: 3pt 0;
+  text-align: center;
+  counter-increment: table;
+
+  caption {
+     &:hover {
+    &::before {
+      color: rgba(grey, 1);
+    }
+  }
+  &::before {
+      content: 'Table ' counter(table) ': ' ;
+      line-height: 0;
+    }
+
+  }
+}
+
+thead {
+  /* defaults */
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+  /*overwrites*/}
+
+tbody {
+  /* defaults */
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+  /*overwrites*/
+}
+
+tfoot {
+  /* defaults */
+  display: table-footer-group;
+  vertical-align: middle;
+  border-color: inherit;
+  /*overwrites*/}
+
+/* for tables without table section elements (can happen with XHTML or dynamically created tables) */
+table > tr {
+  /* defaults */
+  vertical-align: middle;
+  /*overwrites*/}
+
+col {
+  /* defaults */
+  display: table-column;
+  /*overwrites*/}
+
+colgroup {
+  /* defaults */
+  display: table-column-group;
+  /*overwrites*/}
+
+tr {
+  /* defaults */
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  /*overwrites*/}
+
+td, th {
+  /* defaults */
+  display: table-cell;
+  vertical-align: inherit;
+  /*overwrites*/}
+
+th {
+  /* defaults */
+  font-weight: bold;
+  /*overwrites*/}
+
+caption {
+  /* defaults */
+  display: table-caption;
+  text-align: -webkit-center;
+  /*overwrites*/
+}

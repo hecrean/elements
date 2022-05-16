@@ -1,0 +1,70 @@
+
+/* lists */
+
+ul, menu, dir {
+  /* defaults */
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1__qem;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 40px;
+  /*overwrites*/}
+
+ol {
+  /* defaults */
+  display: block;
+  list-style-type: decimal;
+  -webkit-margin-before: 1__qem;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 40px;
+  /*overwrites*/}
+
+li {
+  /* defaults */
+  display: list-item;
+  text-align: -webkit-match-parent;
+  /*overwrites*/}
+
+ul ul, ol ul {
+  /* defaults */
+  list-style-type: circle;
+  /*overwrites*/
+}
+
+ol ol ul, ol ul ul, ul ol ul, ul ul ul {
+  /* defaults */
+  list-style-type: square;
+  /*overwrites*/
+}
+
+dd {
+  /* defaults */
+  display: block;
+  -webkit-margin-start: 40px;
+  /*overwrites*/
+}
+
+dl {
+  /* defaults */
+  display: block;
+  -webkit-margin-before: 1__qem;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  /*overwrites*/}
+
+dt {
+  /* defaults */
+  display: block;
+  /*overwrites*/}
+
+ol ul, ul ol, ul ul, ol ol {
+  /* defaults */
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  /*overwrites*/
+}

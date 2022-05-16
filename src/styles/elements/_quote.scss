@@ -1,0 +1,23 @@
+q {
+  /* defaults */
+  display: inline;
+  /*overwrites*/
+  &::before {
+    content: '“';
+  }
+
+  &::after {
+    content: '”';
+  }
+
+  > q {
+    &::before {
+      content: '‘';
+    }
+
+    &::after {
+      content: '’';
+    }
+  }
+}
+

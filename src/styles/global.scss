@@ -1,0 +1,87 @@
+
+$section-color:blue;
+
+@import 'elements/a';
+@import 'elements/body';
+@import 'elements/blockquote';
+@import 'elements/hr';
+@import 'elements/video';
+@import 'elements/abbr';
+// @import 'elements/caption';
+@import 'elements/cite';
+// @import 'elements/code';
+@import 'elements/figure';
+@import 'elements/heading';
+@import 'elements/html';
+@import 'elements/paragraph';
+@import 'elements/quote';
+// @import 'elements/small';
+@import 'elements/table';
+
+@import 'elements/data-attributes';
+@import 'elements/dialog';
+@import 'elements/mark';
+@import 'elements/strong';
+@import 'elements/b';
+
+@import 'layouts/article-grid';
+
+
+$accent-color: #002fa7;
+
+
+* {
+  box-sizing: border-box;
+  &::selection {
+    background-color: $accent-color;
+    color: white;
+  }
+}
+
+
+:root {
+  accent-color: $accent-color;
+
+  @media (prefers-color-scheme: dark) {
+    --calBgColor: #723352;
+    --eventBorderColor: #512e33;
+    --eventColor1: #965a53;
+    --eventColor2: #65651b;
+    --eventColor3: #456b77;
+    --eventColor4: #28533c;
+  }
+
+  --color-base: $accent-color;
+
+  --color-0: lch(from var(--color-base) 98% 10 h);
+  --color-1: lch(from var(--color-base) 93% 20 h);
+  --color-2: lch(from var(--color-base) 85% 40 h);
+  --color-3: lch(from var(--color-base) 75% 46 h);
+  --color-4: lch(from var(--color-base) 66% 51 h);
+  --color-5: lch(from var(--color-base) 61% 52 h);
+  --color-6: lch(from var(--color-base) 55% 57 h);
+  --color-7: lch(from var(--color-base) 49% 58 h);
+  --color-8: lch(from var(--color-base) 43% 55 h);
+  --color-9: lch(from var(--color-base) 39% 52 h);
+  --color-10: lch(from var(--color-base) 32% 48 h);
+  --color-11: lch(from var(--color-base) 25% 45 h);
+  --color-12: lch(from var(--color-base) 17% 40 h);
+  --color-13: lch(from var(--color-base) 10% 30 h);
+  --color-14: lch(from var(--color-base) 5% 20 h);
+  --color-15: lch(from var(--color-base) 1% 5 h);
+
+}
+
+
+
+/*
+:where()
+:is()
+:has()
+*/
+
+
+
+
+
+

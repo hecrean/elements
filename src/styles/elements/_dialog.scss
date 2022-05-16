@@ -1,0 +1,19 @@
+dialog:not([open]) {
+  /* defaults */
+  display: none;
+  /*overwrites*/}
+
+dialog {
+  /* defaults */
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: -webkit-fit-content;
+  height: -webkit-fit-content;
+  margin: auto;
+  border: solid;
+  padding: 1em;
+  background: white;
+  color: black
+/*overwrites*/
+}

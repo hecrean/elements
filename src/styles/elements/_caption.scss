@@ -1,0 +1,5 @@
+caption {
+  &::before {
+    content: $table-prefix counter(table) $table-suffix;
+  }
+}

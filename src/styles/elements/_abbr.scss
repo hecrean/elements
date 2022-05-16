@@ -1,0 +1,25 @@
+abbr[data-title]{
+  position: relative;
+  /* Ensure consistent styling across browsers*/
+  text-decoration: underline dotted;
+}
+
+  abbr[data-title]:hover::after, abbr[data-title]:focus::after {
+    content: attr(data-title);
+    z-index: 100;
+
+    /* position tooltip like the native one*/
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: auto;
+    white-space: nowrap;
+
+    /*style tooltip*/
+    background-color: $section-color;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.4);
+    font-size: 14px;
+    padding: 3px 5px;
+}

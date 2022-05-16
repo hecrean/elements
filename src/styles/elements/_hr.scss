@@ -1,0 +1,19 @@
+hr {
+  /* defaults */
+  display: block;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
+  border-style: inset;
+  border-width: 1px;
+  box-sizing: border-box;
+  /*overwrites*/
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(240, 240, 240, 0.9);
+/*overwrites*/
+}

@@ -1,0 +1,44 @@
+.heading {
+  &[data-kind="h1"]{
+    &::before {
+      counter-increment: h1 ". "; /* Increment the value of section counter by 1 */
+      content: "§" counter(h1);  /* Display counter value in default style (decimal) */
+    }
+
+  }
+  &[data-kind="h2"]{
+    &::before {
+      counter-increment: h2; /* Increment the value of section counter by 1 */
+      content: "§" counter(h1) "." counter(h2) ". ";  /* Display counter value in default style (decimal) */
+    }
+  }
+  &[data-kind="h3"]{
+    &::before {
+      counter-increment: h3; /* Increment the value of section counter by 1 */
+      content: "§" counter(h1) "." counter(h2) "." counter(h3) ". ";  /* Display counter value in default style (decimal) */
+    }
+  }
+  &[data-kind="h4"]{
+    &::before {
+      counter-increment: h4; /* Increment the value of section counter by 1 */
+      content: "§" counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". ";  /* Display counter value in default style (decimal) */
+
+    }
+  }
+  &[data-kind="h5"]{
+    &::before {
+      counter-increment: h5; /* Increment the value of section counter by 1 */
+      content: "§" counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h4) ". ";  /* Display counter value in default style (decimal) */
+
+    }
+  }
+  &[data-kind="h6"]{
+    &::before {
+      counter-increment: h6; /* Increment the value of section counter by 1 */
+      content: "§" counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h4) "." counter(h6) ;  /* Display counter value in default style (decimal) */
+
+    }
+  }
+
+
+}
